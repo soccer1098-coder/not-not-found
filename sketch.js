@@ -19,7 +19,7 @@ const FPS = 60;
 const BG_COLOR = 0;              // 背景（0=黒, 255=白）
 
 // パッチ生成テンポ（※1枚目・最終枚には適用されない）
-const PATCH_INTERVAL_FRAMES   = 8; // 何フレームごとにパッチ生成するか（小さいほど頻繁）
+const PATCH_INTERVAL_FRAMES   = 6; // 何フレームごとにパッチ生成するか（小さいほど頻繁）
 const PATCHES_MIN_PER_TICK    = 1;  // 1回のタイミングで生成するパッチ数の最小
 const PATCHES_MAX_PER_TICK    = 4;  // 1回のタイミングで生成するパッチ数の最大（含む）
 
@@ -28,8 +28,8 @@ const PATCH_MIN = 30;            // 最小辺
 const PATCH_MAX = 500;           // 最大辺（大きめにすると大胆に欠損）
 
 // 欠損と修復の所要フレーム
-const DECAY_FRAMES   = 30;       // 欠損にかける時間（長いほどゆっくり暗く/崩れる）
-const RESTORE_FRAMES = 50;      // 修復にかける時間（長いほどゆっくり戻る）
+const DECAY_FRAMES   = 15;       // 欠損にかける時間（長いほどゆっくり暗く/崩れる）
+const RESTORE_FRAMES = 30;      // 修復にかける時間（長いほどゆっくり戻る）
 
 // 欠損表現の強さ（控えめ設定）
 const DECAY_DARKEN_MAX = 25;     // 最大暗化量（0〜255の加算的黒）
